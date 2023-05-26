@@ -1,0 +1,24 @@
+{
+	"manifest_version": 3,
+	"name": "Free Canvas",
+	"version": "4.1.1",
+	"description": "预处理ChatGPT网页，配合谷歌浏览器自带的截图工具实现截长图。项目地址：https://github.com/quarkape/gpt-screen-shooter",
+	"author": "quarkape",
+	"action": {
+		"default_title": "gpt-screen-shooter",
+		"default_popup": "popup.html"
+	},
+	"icons": {
+		"16": "img/free-canvas.png",
+		"48": "img/free-canvas.png",
+		"128": "img/free-canvas.png"
+	},
+	"permissions": ["tabs", "webRequest"],
+	"homepage_url": "https://github.com/quarkape/gpt-screen-shooter",
+	"content_scripts": [
+		{
+			"matches": ["https://chat.openai.com/*"],
+			"js": ["js/content.js"]
+		}
+	]
+}
