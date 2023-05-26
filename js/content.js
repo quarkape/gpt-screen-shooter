@@ -74,7 +74,7 @@ chrome.runtime.onMessage.addListener((req, sender, resp) => {
 
     // 将发送内容设置样式
     let sc = document.getElementsByClassName("min-h-[20px]");
-    for (let i=0;i<gc.length;i++) {
+    for (let i=0;i<sc.length;i++) {
       sc[i].style.fontWeight = "normal";
       sc[i].style.fontSize = "16px";
     }
