@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"name": "Free Canvas",
+	"name": "GPT Screen Shooter",
 	"version": "4.1.1",
 	"description": "预处理ChatGPT网页，配合谷歌浏览器自带的截图工具实现截长图。项目地址：https://github.com/quarkape/gpt-screen-shooter",
 	"author": "quarkape",
