@@ -14,6 +14,12 @@
 
 
 
+# 安装-使用视频教程
+
+[→【GPT滚动截图辅助插件】 ](https://www.bilibili.com/video/BV17L411z74w/?share_source=copy_web&vd_source=129e224f53094032a11cf21e89c97c2f)
+
+
+
 # 效果预览
 
 ![处理后的页面效果](img/xg.png)
