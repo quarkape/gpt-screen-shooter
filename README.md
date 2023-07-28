@@ -1,6 +1,6 @@
 #  ChatGPT Screen Shooter
 
-<img src="https://raw.githubusercontent.com/quarkape/free-canvas/main/img/cut.png" alt="image" style="height:100px" />
+<img src="img/cut.png" alt="image" style="height:100px" />
 
 *预处理 ChatGPT 网页版的网页，配合浏览器自带截图功能实现截长图*
 
