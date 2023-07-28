@@ -9,6 +9,7 @@ const fontSizeB = 42; // 输出内容区域的字号，默认24
 const colorB = "#000000"; // 输出内容区域的字色，十六进制表示，默认黑色 #000000
 const ContentWidth = 100; // 整体内容占页面的宽度，如果设置为100，建议字号尽量大
 // const showAvatar = true; // 是否显示头像
+const stickyHeight = 200; // 顶部留空，以防止手机刘海遮住
 
 
 chrome.runtime.onMessage.addListener((req, sender, resp) => {
@@ -34,6 +35,11 @@ chrome.runtime.onMessage.addListener((req, sender, resp) => {
     whole3.classList.remove("overflow-hidden");
 
     whole3.children[1].classList.remove("overflow-hidden");
+
+    // 修改顶部内容，增加宽度，删除模型名称
+    const sticky = document.getElementsByClassName("sticky")[2];
+    sticky.style.height = stickyHeight + "px";
+    sticky.innerHTML = "";
 
     // 回复内容样式
     let gc = document.getElementsByClassName("prose");
