@@ -17,8 +17,14 @@ document.getElementById("deal").addEventListener("click", () => {
   })
 })
 
-document.getElementById("recover").addEventListener("click", () => {
+document.getElementById("copy").addEventListener("click", () => {
   chrome.tabs.sendMessage(tab_id, {opt: 1}, (resp) => {
+      document.getElementById("ans").innerText = resp;
+  })
+})
+
+document.getElementById("export").addEventListener("click", () => {
+  chrome.tabs.sendMessage(tab_id, {opt: 2}, (resp) => {
       document.getElementById("ans").innerText = resp;
   })
 })

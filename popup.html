@@ -6,9 +6,14 @@
 		<link href="css/popup.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div><input id="deal" value="处理网页" type="button" /></div>
-		<div><input id="recover" value="恢复网页" type="button" /></div>
-		<div><input id="proj" value="开源项目" type="button" /></div>
+		<div class="item">网页截屏：
+			<input id="deal" value="处理网页" type="button" />
+			<!-- <input id="recover" value="恢复网页" type="button" /> -->
+		</div>
+		<div class="item">复制文本：<input id="copy" value="复制文本" type="button"></div>
+		<div class="item">导出文本：<input id="export" value="导出文本" type="button"></div>
+		<div class="item"><a id="proj" href="https://github.com/quarkape" target="_blank">寻找更多有趣的开源插件</a></div>
+		<div class="item">提示：（1）初次加载插件成功后，请先刷新浏览器页面，等待页面识别到插件，再使用插件。后续过程中则不需要再重复此过程。（2）点击处理网页后如何使用浏览器自带的截长图功能请看<a href="https://github.com/quarkape/gpt-screen-shooter" target="_blank">【项目介绍】</a></div>
 		<div id="ans"></div>
 	</body>
 	<script src="js/popup.js" type="text/javascript"></script>

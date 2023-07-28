@@ -6,61 +6,41 @@ body {
 	padding-bottom: 0;
 	box-sizing: border-box;
 }
-#deal {
-	width: 100%;
-	height: 40px;
+.item {
+	margin-bottom: 16px;
+}
+#deal, #recover, #copy, #export {
 	font-size: 14px;
+	background-color: transparent;
+	border-radius: 4px;
+	outline: none;
+	transition: all .3s ease;
+	padding: 6px 8px;
+}
+#deal:hover, #recover:hover, #copy:hover, #export:hover {
+	color: #fff;
+}
+#deal, #copy {
 	border: 1px solid #39b54a;
 	color: #39b54a;
-	background-color: transparent;
-	border-radius: 4px;
-	outline: none;
-	transition: all .3s ease;
-	margin-bottom: 12px;
 }
-#deal:hover {
+#deal:hover, #copy:hover {
 	background-color: #39b54a;
-	color: #fff;
 }
-#recover {
-	width: 100%;
-	height: 40px;
-	font-size: 14px;
+#recover, #export {
 	border: 1px solid #0081ff;
 	color: #0081ff;
-	background-color: transparent;
-	border-radius: 4px;
-	outline: none;
-	transition: all .3s ease;
-	margin-bottom: 12px;
 }
-#recover:hover {
+#recover:hover, #export:hover {
 	background-color: #0081ff;
-	color: #fff;
 }
 #proj {
-	width: 100%;
-	height: 40px;
-	font-size: 14px;
-	border: 1px solid #0081ff;
-	color: #0081ff;
-	background-color: transparent;
-	border-radius: 4px;
-	outline: none;
-	transition: all .3s ease;
-	margin-bottom: 12px;
-}
-#proj:hover {
-	background-color: #0081ff;
-	color: #fff;
+	text-decoration: underline;
+	font-style: italic;
 }
 #ans {
 	color: #e54d42;
 	font-size: 14px;
 	margin: 8px 0;
 	line-height: 1.4;
-}
-#loc {
-	color: #999;
-	font-style: italic;
 }
