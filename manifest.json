@@ -1,17 +1,17 @@
 {
 	"manifest_version": 3,
 	"name": "GPT Screen Shooter",
-	"version": "4.1.1",
-	"description": "预处理ChatGPT网页，配合谷歌浏览器自带的截图工具实现截长图。项目地址：https://github.com/quarkape/gpt-screen-shooter",
+	"version": "2.0.0",
+	"description": "GPT3.5截长图、复制聊天文本、导出聊天内容。项目地址：https://github.com/quarkape/gpt-screen-shooter",
 	"author": "quarkape",
 	"action": {
 		"default_title": "gpt-screen-shooter",
 		"default_popup": "popup.html"
 	},
 	"icons": {
-		"16": "img/free-canvas.png",
-		"48": "img/free-canvas.png",
-		"128": "img/free-canvas.png"
+		"16": "img/cut.png",
+		"48": "img/cut.png",
+		"128": "img/cut.png"
 	},
 	"permissions": ["tabs", "webRequest"],
 	"homepage_url": "https://github.com/quarkape/gpt-screen-shooter",

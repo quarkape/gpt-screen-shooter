@@ -3,11 +3,12 @@ console.log("欢迎star和fork项目，以获得后续的更新通知~")
 
 // 你可以自行修改下面的配置或者新增新的配置内容
 
-const fontSizeA = 24; // 输入内容区域的字号，默认24
+const fontSizeA = 42; // 输入内容区域的字号，默认24
 const colorA = "#000000"; // 输入内容区域的字色，十六进制表示，默认黑色 #000000
-const fontSizeB = 24; // 输出内容区域的字号，默认24
+const fontSizeB = 42; // 输出内容区域的字号，默认24
 const colorB = "#000000"; // 输出内容区域的字色，十六进制表示，默认黑色 #000000
-const ContentWidth = 60; // 整体内容占页面的宽度，不建设设置为100%，不然导出的图片需要放大、左右滑动查看，不太方便
+const ContentWidth = 100; // 整体内容占页面的宽度，如果设置为100，建议字号尽量大
+// const showAvatar = true; // 是否显示头像
 
 
 chrome.runtime.onMessage.addListener((req, sender, resp) => {
@@ -46,6 +47,7 @@ chrome.runtime.onMessage.addListener((req, sender, resp) => {
     let sc = document.getElementsByClassName("min-h-[20px]");
     for (let i=0;i<sc.length;i++) {
       sc[i].style.fontWeight = "bold";
+      sc[i].style.lineHeight = (fontSizeB + 8) + "px";
       sc[i].style.fontSize = fontSizeB + "px";
       sc[i].style.color = "#000000";
     }

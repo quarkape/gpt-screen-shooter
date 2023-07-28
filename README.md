@@ -2,13 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/quarkape/free-canvas/main/img/free-canvas.png" alt="image" style="height:100px" />
 
-### **预处理 ChatGPT 网页版的网页
+*预处理 ChatGPT 网页版的网页，配合浏览器自带截图功能实现截长图*
 
-### ** 配合浏览器自带截图功能实现截长图
+*仅适用于GPT-3.5页面*
 
-遇到问题，请提issue或反馈；
+*遇到问题，请提issue或反馈；*
 
-欢迎star或fork以跟进后续功能更新~
+*欢迎star或fork以跟进后续功能更新~*
 
 
 
@@ -74,6 +74,8 @@
 - 在ChatGPT页面，进入一个chat会话
 - 打开插件：点击“导出文本”按钮即可完成
 - 完成后浏览器将开始导出为txt文件
+
+
 
 
 
