@@ -4,7 +4,7 @@ console.log("欢迎star和fork项目，以获得后续的更新通知~")
 // 你可以自行修改下面的配置或者新增新的配置内容
 
 const fontSizeA = 42; // 输入内容区域的字号，默认24
-const colorA = "#000000"; // 输入内容区域的字色，十六进制表示，默认黑色 #000000
+const colorA = "#0081ff"; // 输入内容区域的字色，十六进制表示，默认黑色 #000000
 const fontSizeB = 42; // 输出内容区域的字号，默认24
 const colorB = "#000000"; // 输出内容区域的字色，十六进制表示，默认黑色 #000000
 const ContentWidth = 100; // 整体内容占页面的宽度，如果设置为100，建议字号尽量大
@@ -12,12 +12,15 @@ const ContentWidth = 100; // 整体内容占页面的宽度，如果设置为100
 const stickyHeight = 200; // 顶部留空，以防止手机刘海遮住
 const inputPre = "【输入内容】"; //输入内容前缀
 const inputSuf = "【输出内容】"; //输出内容前缀
+const inputB = true; //输入内容加粗
+const outputB = true; //输出内容加粗
 const divider = "------"; // 分隔符
 const fileName = "gpt-screen-shooter导出内容"; // 导出文本名称
 
 
 chrome.runtime.onMessage.addListener((req, sender, resp) => {
   const opt = req;
+  console.log(opt)
   // return;
   if (opt.type === 0) {
     // 隐藏侧边栏
@@ -46,21 +49,21 @@ chrome.runtime.onMessage.addListener((req, sender, resp) => {
     sticky.style.height = stickyHeight + "px";
     sticky.innerHTML = "";
 
-    // 回复内容样式
-    const gc = document.getElementsByClassName("prose");
-    for (let i=0;i<gc.length;i++) {
-      gc[i].style.fontWeight = "bold";
-      gc[i].style.fontSize = (opt.fontSize ? opt.fontSize : fontSizeB) + "px";
-      gc[i].style.color = opt.outputColor ? `#${opt.outputColor}` : colorB;
-    }
-
     // 发送内容样式
     const sc = document.getElementsByClassName("min-h-[20px]");
     for (let i=0;i<sc.length;i++) {
-      sc[i].style.fontWeight = "bold";
+      sc[i].style.fontWeight = opt.inputB ? "bold" : "normal";
       sc[i].style.lineHeight = ((Number(opt.fontSize ? opt.fontSize : fontSizeA)) + 16) + "px";
       sc[i].style.fontSize = (opt.fontSize ? opt.fontSize : fontSizeA) + "px";
       sc[i].style.color = opt.inputColor ? `#${opt.inputColor}` : colorA;
+    }
+
+    // 回复内容样式
+    const gc = document.getElementsByClassName("prose");
+    for (let i=0;i<gc.length;i++) {
+      gc[i].style.fontWeight = opt.outputB ? "bold" : "normal";
+      gc[i].style.fontSize = (opt.fontSize ? opt.fontSize : fontSizeB) + "px";
+      gc[i].style.color = opt.outputColor ? `#${opt.outputColor}` : colorB;
     }
 
     // 隐藏头像

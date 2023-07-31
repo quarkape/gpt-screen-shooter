@@ -1,5 +1,5 @@
 body {
-	width: 280px;
+	width: 300px;
 	min-height: 140px;
 	border-radius: 4px;
 	padding: 0 4px 0 4px;
@@ -7,45 +7,62 @@ body {
 	font-size: 14px;
 }
 .opt-item {
-	line-height: 24px;
+	line-height: 20px;
 	font-size: 14px;
 }
 .title {
 	font-weight: bold;
-	font-size: 16px;
-	text-align: center;
-	height: 30px;
-	line-height: 30px;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
 	position: relative;
-}
-.title-text {
-	padding: 0 6px;
-	background-color: #FFFFFF;
+	margin-bottom: 8px;
+	padding-left: 8px;
 }
 .title::before {
 	content: "";
 	position: absolute;
-	height: 1px;
-	background-color: rgba(0, 0, 0, 0.08);
-	width: 100%;
-	top: 50%;
+	width: 4px;
+	height: 100%;
 	left: 0;
-	z-index: -1;
+	top: 0;
+	background-color: #cce6ff;
+}
+.title-text {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.config-n {
+	margin-top: 12px;
+}
+.config-text {
+	text-decoration: underline;
+}
+.config {
+	background-color: #f6f6f6;
+	border-radius: 6px;
+	padding: 8px;
+	margin-top: 8px;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .item {
 	margin-bottom: 8px;
 }
 .input-box {
 	display: block;
-	width: 100%;
+	width: 240px;
 	margin: 8px 0;
 	line-height: 24px;
 	border: none;
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid #ddd;
+	transition: all 0.3s ease;
 	outline: none;
+	background-color: transparent;
 }
 .input-box:focus {
-	border-bottom: 1px solid #0081ff;
+	border-bottom: 1px solid #666;
 	outline: none;
 }
 .deal-opt, .copy-opt, .export-opt {
@@ -59,7 +76,7 @@ body {
 	padding: 8px 0;
 	border-radius: 4px;
 	text-align: center;
-	margin: 12px 0;
+	margin-top: 12px;
 	outline: none;
 	border: 1px solid #0081ff;
 	background-color: #FFFFFF;
@@ -69,6 +86,9 @@ body {
 .btn:hover {
 	background-color: #0081ff;
 	color: #FFFFFF;
+}
+.notify {
+	display: none;
 }
 #proj {
 	text-decoration: underline;

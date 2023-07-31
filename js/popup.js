@@ -42,7 +42,9 @@ document.querySelector(".btn").addEventListener("click", () => {
     obj.fontSize = document.getElementById("font-size").value;
     obj.width = document.getElementById("width").value;
     obj.inputColor = document.getElementById("input-color").value;
+    obj.inputB = document.getElementById("inba").checked;
     obj.outputColor = document.getElementById("output-color").value;
+    obj.outputB = document.getElementById("outba").checked;
     obj.showAvatar = document.getElementById("showa").checked;
   } else if (curType === 1) {
     obj.inputPre = document.getElementById("input-prea").value;

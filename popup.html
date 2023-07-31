@@ -8,7 +8,7 @@
 	<body>
 
 		<div>
-			<h3 class="title"><span class="title-text">选择功能</span></h3>
+			<div class="title">选择功能</div>
 			<div class="opt-item">
 				<input type="radio" name="opt" id="deal" value="deal" checked><label for="deal">处理页面</label>
 				<input type="radio" name="opt" id="copy" value="copy"><label for="copy">复制文本</label>
@@ -16,39 +16,58 @@
 			</div>
 		</div>
 
-		<div>
-			<h3 class="title"><span class="title-text">配置参数</span></h3>
-			<div class="deal-opt showconf">
-				<input class="input-box" id="font-size" placeholder="字号，默认42" type="number" max="60" min="16">
-				<input class="input-box" id="width" placeholder="内容宽度占比，默认100" type="number" max="100" min="40">
-				<input class="input-box" id="input-color" placeholder="输入字色（十六进制，如0081ff）">
-				<input class="input-box" id="output-color" placeholder="输出字色（十六进制，如0081ff）">
-				<span>是否显示头像：</span>
-				<input class="input-boxb" type="radio" name="sa" id="showa" checked><label for="showa">显示</label>
-				<input class="input-boxb" type="radio" name="sa" id="showb"><label for="showb">隐藏</label>
-			</div>
-			<div class="copy-opt">
-				<input class="input-box" id="input-prea" placeholder="输入内容前缀，默认为【输入内容】\n">
-				<input class="input-box" id="input-sufa" placeholder="输出内容前缀，默认为【输出内容】\n">
-				<input class="input-box" id="dividera" placeholder="一次对话分隔符号，默认为------">
-			</div>
-			<div class="export-opt">
-				<input class="input-box" id="export-name" placeholder="导出文件名称，默认为gpt-screen-shoter导出文本">
-				<input class="input-box" id="input-pre" placeholder="输入内容前缀，默认为【输入内容】">
-				<input class="input-box" id="input-suf" placeholder="输出内容前缀，默认为【输出内容】">
-				<input class="input-box" id="divider" placeholder="一次对话分隔符号，默认为------">
+		<div><button class="btn">开始处理</button></div>
+
+		<div class="config-n">
+			<div class="title"><u>高级配置</u></div>
+			<div class="config">
+				<div class="deal-opt showconf">
+					<input class="input-box" id="font-size" placeholder="字号，默认42">
+					<input class="input-box" id="width" placeholder="内容占比，默认100">
+					<div>
+						<span>显示头像：</span>
+						<input class="input-boxb" type="radio" name="sa" id="showa" checked><label for="showa">显示</label>
+						<input class="input-boxb" type="radio" name="sa" id="showb"><label for="showb">隐藏</label>
+					</div>
+					<input class="input-box" id="input-color" placeholder="输入字色，默认0081ff">
+					<div>
+						<span>输入文字加粗：</span>
+						<input class="input-boxb" type="radio" name="inb" id="inba" checked><label for="inba">显示</label>
+						<input class="input-boxb" type="radio" name="inb" id="inbb"><label for="inbb">隐藏</label>
+					</div>
+					<input class="input-box" id="output-color" placeholder="输出字色，默认000000">
+					<div>
+						<span>输出文字加粗：</span>
+						<input class="input-boxb" type="radio" name="outb" id="outba" checked><label for="outba">加粗</label>
+						<input class="input-boxb" type="radio" name="outb" id="outbb"><label for="outbb">不加粗</label>
+					</div>
+					
+				</div>
+				<div class="copy-opt">
+					<input class="input-box" id="input-prea" placeholder="输入内容前缀，默认为【输入内容】\n">
+					<input class="input-box" id="input-sufa" placeholder="输出内容前缀，默认为【输出内容】\n">
+					<input class="input-box" id="dividera" placeholder="一次对话分隔符号，默认为------">
+				</div>
+				<div class="export-opt">
+					<input class="input-box" id="export-name" placeholder="导出文件名，默认gpt-screen-shoter导出文本">
+					<input class="input-box" id="input-pre" placeholder="输入内容前缀，默认为【输入内容】">
+					<input class="input-box" id="input-suf" placeholder="输出内容前缀，默认为【输出内容】">
+					<input class="input-box" id="divider" placeholder="一次对话分隔符号，默认为------">
+				</div>
 			</div>
 		</div>
 
-		<div><button class="btn">开始处理</button></div>
 
 		<div class="item"><a id="proj" href="https://github.com/quarkape" target="_blank">寻找更多有趣的开源插件</a></div>
 		<div class="item">
-			<span>提示：</span>
-			<span>（1）初次加载插件成功后，请先刷新浏览器页面，等待页面识别到插件，再使用插件。后续过程中则不需要再重复此过程。</span>
-			<span>（2）点击处理网页后如何使用浏览器自带的截长图功能请看<a href="https://github.com/quarkape/gpt-screen-shooter" target="_blank">【项目介绍】</a>。</span>
-			<span>（3）恢复页面直接刷新即可。</span>
-			<span>（4）截图时，如果内容很多，时间可能会比较长，请耐心等待。</span>
+			<div class="title"><u>提示</u></div>
+			<div class="notify">
+				<span>（1）初次加载插件成功后，请先刷新浏览器页面，等待页面识别到插件，再使用插件。后续过程中则不需要再重复此过程。</span>
+				<span>（2）点击处理网页后如何使用浏览器自带的截长图功能请看<a href="https://github.com/quarkape/gpt-screen-shooter" target="_blank">【项目介绍】</a>。</span>
+				<span>（3）恢复页面直接刷新即可。</span>
+				<span>（4）截图时，如果内容很多，时间可能会比较长，请耐心等待。</span>
+			</div>
+			
 		</div>
 		<div id="ans"></div>
 		<script src="js/popup.js" type="text/javascript" defer></script>
