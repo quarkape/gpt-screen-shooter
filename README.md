@@ -16,6 +16,12 @@
 
 [→【GPT滚动截图辅助插件】 ](https://www.bilibili.com/video/BV17L411z74w/?share_source=copy_web&vd_source=129e224f53094032a11cf21e89c97c2f)
 
+&nbsp;
+
+# 插件截图
+
+![插件截图](img/preview.png)
+
 
 
 # 效果预览
