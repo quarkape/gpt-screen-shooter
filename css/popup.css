@@ -1,38 +1,74 @@
 body {
-	width: 300px;
+	width: 280px;
 	min-height: 140px;
 	border-radius: 4px;
-	padding: 10px;
-	padding-bottom: 0;
+	padding: 0 4px 0 4px;
 	box-sizing: border-box;
+	font-size: 14px;
+}
+.opt-item {
+	line-height: 24px;
+	font-size: 14px;
+}
+.title {
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+}
+.title-text {
+	padding: 0 6px;
+	background-color: #FFFFFF;
+}
+.title::before {
+	content: "";
+	position: absolute;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.08);
+	width: 100%;
+	top: 50%;
+	left: 0;
+	z-index: -1;
 }
 .item {
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 }
-#deal, #recover, #copy, #export {
-	font-size: 14px;
-	background-color: transparent;
-	border-radius: 4px;
+.input-box {
+	display: block;
+	width: 100%;
+	margin: 8px 0;
+	line-height: 24px;
+	border: none;
+	border-bottom: 1px solid #999;
 	outline: none;
-	transition: all .3s ease;
-	padding: 6px 8px;
 }
-#deal:hover, #recover:hover, #copy:hover, #export:hover {
-	color: #fff;
+.input-box:focus {
+	border-bottom: 1px solid #0081ff;
+	outline: none;
 }
-#deal, #copy {
-	border: 1px solid #39b54a;
-	color: #39b54a;
+.deal-opt, .copy-opt, .export-opt {
+	display: none;
 }
-#deal:hover, #copy:hover {
-	background-color: #39b54a;
+.showconf {
+	display: block !important;
 }
-#recover, #export {
+.btn {
+	width: 100%;
+	padding: 8px 0;
+	border-radius: 4px;
+	text-align: center;
+	margin: 12px 0;
+	outline: none;
 	border: 1px solid #0081ff;
+	background-color: #FFFFFF;
 	color: #0081ff;
+	transition: all 0.3s ease;
 }
-#recover:hover, #export:hover {
+.btn:hover {
 	background-color: #0081ff;
+	color: #FFFFFF;
 }
 #proj {
 	text-decoration: underline;
