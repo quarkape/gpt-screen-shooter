@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "GPT Screen Shooter",
-	"version": "2.1.0",
+	"version": "3.0.0",
 	"description": "GPT3.5截长图、复制聊天文本、导出聊天内容。项目地址：https://github.com/quarkape/gpt-screen-shooter",
 	"author": "quarkape",
 	"icons": {
