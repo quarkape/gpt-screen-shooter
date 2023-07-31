@@ -1,4 +1,4 @@
-#  ChatGPT Screen Shooter
+#  ChatGPT Screen Shooter v3.0.0
 
 <img src="img/cut.png" alt="image" style="height:100px" />
 
