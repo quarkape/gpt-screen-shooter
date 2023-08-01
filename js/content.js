@@ -131,7 +131,8 @@ function toClipBoard(content) {
   const textarea = document.createElement('textarea');
   document.body.appendChild(textarea);
   textarea.style.position = 'fixed';
-  textarea.style.top = '10px';
+  textarea.style.top = '0';
+  textarea.style.clip = "rect(0,0,0,0)";
   textarea.value = content;
   textarea.select();
   document.execCommand('copy', true);
